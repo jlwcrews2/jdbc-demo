@@ -35,6 +35,7 @@ public class PartsController {
         return ResponseEntity.ok().build();
     }
 
+    @PutMapping
     public ResponseEntity<Part> updatePart(@RequestBody Part part) {
         return ResponseEntity.ok(partsService.updatePart(part));
     }
